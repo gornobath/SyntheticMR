@@ -1,0 +1,146 @@
+.syncon_testimonials{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.syncon_testimonials-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 740px;
+    width: 100%;
+    z-index: 0;
+    position: relative;
+}
+
+@media (max-width: 992px){
+    .syncon_testimonials-box{
+        gap: 40px
+    }
+}
+
+
+.syncon_testimonials--img{
+    aspect-ratio: 1 / 1;
+    display: block;
+    height: 150px;
+    width: 150px;
+}
+
+.syncon_testimonials--img img{
+    border-radius: 100px !important;
+    -webkit-border-radius: 100px !important;
+    display: block;
+    height: 100% !important;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+.syncon_testimonials--info{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    width: calc(100% - 180px);
+}
+
+@media (max-width: 992px){
+    .syncon_testimonials--info{
+        width: 100%;
+    }
+}
+
+.syncon_testimonials--info_testimonial{
+    text-align: left;
+    color: #292D32;
+    font-family: "BrownPro-Regular", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+@media (max-width: 992px){
+    .syncon_testimonials--info_testimonial{
+        text-align: center;;
+    }
+}
+
+.syncon_testimonials--info_name{
+    text-align: left;
+    color: #292D32;
+    display: block;
+    font-family: "BrownPro-Regular", Sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    width: 100%;
+}
+
+@media (max-width: 992px){
+    .syncon_testimonials--info_name{
+        text-align: center;
+    }
+}
+
+.syncon_testimonials--info_job{
+    text-align: left;
+    color: #999999;
+    font-family: "BrownPro-Regular", Sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+@media (max-width: 992px){
+    .syncon_testimonials--info_job{
+        text-align: center;
+    }
+}
+
+.syncon_testimonials  .carousel-inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0 auto;
+    overflow: unset;
+    width: fit-content;
+}
+
+.syncon_testimonials  .carousel-item{
+    margin: 0 !important;
+	min-width: 100%;
+    margin: 0 !important;
+}
+
+.syn-carouselTestimonials .carousel-indicators{
+    gap: 11.4px;
+    padding-top: 20px;
+    position: relative;
+    margin: 0 !important;
+}
+
+.syn-carouselTestimonials .carousel-indicators li{
+    aspect-ratio: 1 / 1; 
+    background: #999999;
+    border: unset ;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    height: 11.4px;
+    margin: 0;
+    padding: 0;
+    width: 11.4px;
+}
+

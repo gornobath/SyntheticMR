@@ -1,0 +1,45 @@
+@mixin border-radius( $topLeft, $topRight, $bottomLeft, $bottomRight)
+    -webkit-border-radius: $topLeft $topRight $bottomLeft $bottomRight 
+    border-radius: $topLeft $topRight $bottomLeft $bottomRight    
+
+
+@mixin box-shadow ($inset ,$HorizontalLength ,$VerticalLength, $BlurRadius, $Spread, $color )
+    -webkit-box-shadow: $inset $HorizontalLength $VerticalLength $BlurRadius $Spread $color
+    box-shadow: $inset $HorizontalLength $VerticalLength $BlurRadius $Spread $color
+
+@mixin box-sizing( $atributo )
+    -webkit-box-sizing: $atributo
+    -moz-box-sizing: $atributo
+    box-sizing: $atributo    
+
+
+@mixin gradient50($color1, $color2)
+    border-bottom-color: $color1
+    border-bottom-color: -moz-linear-gradient(left,  $color1 50%, color2 50%, color2 50%)
+    border-bottom-color: -webkit-linear-gradient(left,  $color1 50%,color2 50%,color2 50%)
+    border-bottom-color: linear-gradient(to right,  $color1 50%,color2 50%,color2 50%)
+
+@mixin opacity( $opacity, $filter )
+    opacity: $opacity
+    filter: alpha(opacity=$filter )
+
+
+@mixin scale( $valor )
+    -moz-transform: scale( $valor )
+    -webkit-transform: scale( $valor )
+    -o-transform: scale( $valor )
+    -ms-transform: scale( $valor )
+    transform: scale( $valor )
+
+@mixin transition( $propiedad, $duracion, $funcion)
+    -webkit-transition: $propiedad $duracion $funcion
+    -moz-transition: $propiedad $duracion $funcion
+    -ms-transition: $propiedad $duracion $funcion
+    -o-transition: $propiedad $duracion $funcion
+    transition: $propiedad $duracion $funcion   
+
+@mixin user-select($op) 
+    -webkit-user-select: $op
+    -moz-user-select: $op
+    -ms-user-select: $op
+    user-select: $op

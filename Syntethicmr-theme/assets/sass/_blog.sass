@@ -1,0 +1,414 @@
+.md_blog_cont_menu,
+.md_blog_cont_menu_2
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: center
+    justify-content: flex-start
+    align-items: center
+    gap: 20px
+
+@media (max-width: 650px)
+    .md_blog_cont_menu,
+    .md_blog_cont_menu_2
+        gap: 10px
+
+.md_blog_cont_menu_titulo,
+.md_blog_cont_menu_2_titulo
+    color: #015A80
+    cursor: pointer
+    font-size: 20px !important
+    font-weight: 500
+    text-align: left
+    width: fit-content
+
+@media (max-width: 650px)
+    .md_blog_cont_menu_titulo,
+    .md_blog_cont_menu_2_titulo
+        margin: 0
+
+.md_blog_cont_menu_titulo_activo,
+.md_blog_cont_menu_2_titulo_activo
+    font-size: 30px !important
+    font-weight: bold
+
+.md_blog_cont
+    height: 400px
+    margin: 0 auto
+    position: relative
+
+@media (max-width: 650px)
+    .md_blog_cont
+        overflow-x: scroll
+    
+
+.md_blog_cont_info,
+.md_blog_cont_info_2
+    opacity: 0
+    visibility: hidden
+    @include transition( all, 500ms, linear)
+    position: absolute
+    top: 0
+    left: 0
+    
+@media (max-width: 650px)
+    .md_blog_cont_info,
+    .md_blog_cont_info_2
+        width: 300%
+        gap: 10px
+
+.md_blog_cont_info_activo,
+.md_blog_cont_2_info_activo,
+    opacity: 1
+    visibility: visible
+
+.cd_blog_noticia_evento
+    width: 100%
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: flex-start
+    justify-content: space-around
+    align-items: flex-start
+    gap: 40px
+
+.cd_blog_noticia_evento_info
+    width: 45%
+
+.cd_blog_noticia_evento-imagen
+    width: 45%
+
+    img
+        width: 100%
+        object-fit: cover
+
+@media (max-width: 600px)
+    .cd_blog_noticia_evento_info,
+    .cd_blog_noticia_evento-imagen
+        width: 100%
+
+
+
+
+header
+    display:none
+
+
+.omb_banner
+    position: relative
+    width: 100%
+    display: flex
+    justify-content: center
+
+@media (max-width: 850px)
+    .omb_banner
+        padding: 0
+  
+
+
+@media (max-width: 600px)
+    .omb_banner
+        -webkit-border-radius: 0 0 0 0%
+        border-radius: 0 0 0 0%
+        /* height: 90vh */
+        height: 710px
+  
+
+
+.omb_banner_info-contenedor
+    box-sizing: border-box
+    height: inherit
+    position: relative
+    width: 1168px
+
+@media (max-width: 850px)
+    .omb_banner_info-contenedor
+        width: 100%
+  
+
+
+.omb_banner_info-banner
+    box-sizing: border-box
+    height: auto
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: flex-start
+    justify-content: center
+    align-items: flex-start
+    padding: 0
+    position: relative
+    gap: 50px
+    width: 100%
+
+
+@media (max-width: 1220px)
+    .omb_banner_info-banner
+        margin-left: 20px
+  
+
+
+@media (max-width: 850px)
+    .omb_banner_info-banner
+        justify-content: center
+        margin-left: 0
+        gap: 20px
+  
+
+
+
+@media (max-width: 600px)
+    .omb_banner_info-banner
+        align-content: center
+        flex-direction: column-reverse
+        margin-top: 83px
+	
+
+
+.omb_banner_info-banner-box
+    box-sizing: border-box
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    align-content: flex-start
+    justify-content: center
+    align-items: flex-start
+    gap: 20px
+    width: 90%
+
+
+@media (max-width: 700px)
+    .omb_banner_info-banner-box
+        width: 80%
+        flex-direction: column-reverse
+  
+
+
+.omb_banner_info-banner-box-titulo
+    box-sizing: border-box
+    color: #ffffff
+    font-family: 'Blinker', sans-serif
+    font-size: 40px
+    font-weight: 700
+    line-height: 41px
+    padding: 0
+    margin: 0
+    text-transform: uppercase
+
+
+@media (max-width:600px)
+    .omb_banner_info-banner-box-titulo
+        font-size: 30px
+        line-height: 31px
+  
+
+
+.omb_banner_info-banner-box-texto
+    box-sizing: border-box
+    color: #ffffff
+    font-family: 'Blinker', sans-serif
+    font-size: 22px
+    font-weight: 600
+    line-height: 23px
+    padding: 0
+    margin: 0
+
+
+@media (max-width:600px)
+    .omb_banner_info-banner-box-texto
+        font-size: 20px
+        line-height: 21px
+  
+
+
+.omb_banner_info-banner-imagen
+    width: 50%
+    position: relative
+    height: 350px
+    right: 31px
+
+
+
+@media (max-width: 600px)
+    .omb_banner_info-banner-imagen
+        right: 0
+        height: 200px
+  
+
+
+@media (max-width: 850px)
+    .omb_banner_info-banner-imagen
+        width: 80%
+  
+
+
+.omb_banner_info-banner-imagen img
+    position: absolute
+    top: 0
+    left: 0
+    height: 350px !important
+    width: 100%
+    object-fit: cover
+    /*animation: omd_anima_flotar_verticalmente 5s infinite*/
+
+
+@media (max-width: 600px)
+    .omb_banner_info-banner-imagen img
+        height: 200px !important
+        object-fit: cover
+  
+
+
+
+
+.omb_banner_info-elemento-flotante_1
+    position: absolute
+    z-index: 2   
+    top: 90px
+    left: 34%
+    animation: omd_anima_flotar_verticalmente_1 5s infinite 
+
+
+
+
+@media (max-width: 850px)
+    .omb_banner_info-elemento-flotante_1
+        top: 44%
+        left: 6%
+  
+
+  
+
+
+@media (max-width: 600px)
+    .omb_banner_info-elemento-flotante_1
+        display: none
+  
+
+
+.omb_banner_info-elemento-flotante_2
+    position: absolute
+    z-index: 2   
+    right: 96px
+    top: 150px
+    animation: omd_anima_flotar_verticalmente_2 5s infinite 
+
+
+
+
+
+@media (max-width: 850px)
+    .omb_banner_info-elemento-flotante_2
+        display: none
+  
+
+
+.omb_banner_info-elemento-flotante_3
+    position: absolute
+    z-index: 2   
+    right: 0
+    bottom: 0
+    animation: omd_anima_flotar_verticalmente_3 4s infinite
+
+
+
+
+
+@media (max-width: 600px)
+    .omb_banner_info-elemento-flotante_3
+        display: none
+        width: 50%
+  
+
+
+.omb-boton 
+    font-size: 17pt
+    color: #2E2096
+    font-weight: bolder
+    position: absolute
+    background-color: rgba(255, 255, 255, 0.3)
+    z-index: 5
+    width: 38px
+    height: 38px
+    display: flex
+    align-content: center
+    justify-content: center
+    align-items: center
+    padding-bottom: 5px
+    border-radius: 50%
+    -webkit-border-radius: 50%
+    cursor:pointer
+
+
+.omb-boton:hover 
+    background-color: rgba(255,255,255,0.4)
+    transition: 0.5s
+    color: black
+
+.derecha
+    right: 10px
+    top: 0
+    bottom: 0
+    margin: auto 0
+    cursor: pointer
+
+.izquierda
+    left: 10px
+    top: 0
+    bottom: 0
+    margin: auto 0
+    cursor: pointer
+
+.omb_banner_info-banner-box-boton:hover
+    color: #ffffff !important
+    background-image: linear-gradient(0deg, #2e2096 -10%, #f2295b 120%)
+
+.cd_blog_noticia_evento_info_contenido
+    width: 45%
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-content: flex-start
+    justify-content: flex-start
+    align-items: flex-start
+    gap: 10px
+
+    a
+        text-decoration: none
+
+@media (max-width: 650px)
+    .cd_blog_noticia_evento_info_contenido
+        width: 90%
+
+.cd_blog_noticia_evento-imagen
+    width: 45%
+
+@media (max-width: 650px)
+    .cd_blog_noticia_evento-imagen
+        width: 90%
+    
+
+.cd_blog_noticia_evento_info_btn
+    background-color: #FFFFFF
+    border: none
+    color: #505353
+    font-family: "Oxygen", sans-serif
+    font-size: 14px
+    text-align: right
+    width: 100%
+
+.cd_bc_blog_testimonial_cont
+    min-height: 650px
+    margin: 0 auto
+    position: relative
+
+.cd_blog_noticia_testimonial-imagen
+    height: auto
+    overflow: hidden
+    position: relative
+    width: 100%
+
+.cd_blog_noticia_popular-video
+    width: 100%
+    height: auto

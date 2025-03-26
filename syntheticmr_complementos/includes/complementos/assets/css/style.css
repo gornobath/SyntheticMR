@@ -1,0 +1,79 @@
+.argcom_shortcode_mostrarInfoContactenos_cont{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.da_sh_footer_informacion_cont{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+.da_sh_footer_informacion_cont_imagen{
+    display: block;
+    width: 40px;
+    object-fit: contain;
+    object-position: center;
+}
+
+.da_sh_footer_informacion_cont_info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+.da_sh_footer_informacion_cont_titulo{
+    color: #ffffff;
+    margin: 0;
+}
+
+
+.da_sh_footer_informacion_cont_texto{
+    color: #04C1F3;
+}
+
+
+.da_redes_contacto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.da_contacto_red_social{
+    text-decoration: none;
+    display: flex;
+    background: #04C1F3;
+    width: 50px;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.da_contacto_red_social:hover{
+    background: #007CC2;
+}
+
+.da_footer_fa{
+    color: #ffffff;
+    font-size: 25px;
+}
+
