@@ -430,9 +430,6 @@ body {
   height: inherit;
   list-style: none;
   width: 100%;
-  /* .current-menu-item::after, */
-  /* .current_page_item::after  */
-  *  /* transform: scaleX(1) */
 }
 .syn_menu_principal_desktop li {
   padding: 15px 16px;
